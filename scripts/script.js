@@ -2,6 +2,12 @@
 const nameInput = document.getElementById('name-input');
 const greetButton = document.getElementById('greet-button');
 const greetingDisplay = document.getElementById('greeting-display');
+const footerParagraph = document.getElementById('footer')
+
+const currentYear = new Date().getFullYear();
+
+// Display the current year
+document.getElementById('current-year').textContent = currentYear;
 
 // Event listener for the greet button
 greetButton.addEventListener('click', () => {
